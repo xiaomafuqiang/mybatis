@@ -46,7 +46,11 @@ public class MybatisTest {
         SqlSession openSession = sqlSessionFactory.openSession();
 
         EmployeeInterfaceMapper employeeInterfaceMapper = openSession.getMapper(EmployeeInterfaceMapper.class);
-        Employee employee = employeeInterfaceMapper.getEmpById2(2);
-        System.out.println(employee);
+        Employee getById = employeeInterfaceMapper.getEmpById(2); // 单个参数
+        System.out.println(getById);
+        Employee getByIdAndGender = employeeInterfaceMapper.getEmpByIdAndGender(1, "f"); // 多个参数
+        System.out.println(getByIdAndGender);
+
+        openSession.close();
     }
 }
