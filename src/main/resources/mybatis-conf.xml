@@ -15,6 +15,9 @@
         </environment>
     </environments>
     <mappers>
+        <!-- 普通写法 -->
         <mapper resource="EmployeeMapper.xml"/>
+        <!-- 接口写法 -->
+        <mapper resource="EmployeeInterfaceMapper.xml"/>
     </mappers>
 </configuration>
