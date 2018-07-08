@@ -1,6 +1,6 @@
 package net.htmlonline.test;
 
-import net.htmlonline.bean.Employee;
+import net.htmlonline.dao.Employee;
 import net.htmlonline.dao.EmployeeInterfaceMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

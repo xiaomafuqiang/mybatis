@@ -1,4 +1,4 @@
-package net.htmlonline.bean;
+package net.htmlonline.dao;
 
 public class Employee {
 
