@@ -3,8 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="net.htmlonline.dao.EmployeeInterfaceMapper">
+    <!--<select id="getEmpById" resultType="net.htmlonline.dao.Employee">-->
+    <!--select id, last_name lastName, email, gender from tb1_employee where id = #{id}-->
+  <!--</select>-->
+
     <select id="getEmpById" resultType="net.htmlonline.dao.Employee">
-    select id, last_name lastName, email, gender from tb1_employee where id = #{id}
+      select * from tb1_employee where id = #{id}
   </select>
 
     <select id="getEmpByIdAndGender" resultType="net.htmlonline.dao.Employee">

@@ -48,8 +48,8 @@ public class MybatisTest {
         EmployeeInterfaceMapper employeeInterfaceMapper = openSession.getMapper(EmployeeInterfaceMapper.class);
         Employee getById = employeeInterfaceMapper.getEmpById(2); // 单个参数
         System.out.println(getById);
-        Employee getByIdAndGender = employeeInterfaceMapper.getEmpByIdAndGender(1, "f"); // 多个参数
-        System.out.println(getByIdAndGender);
+//        Employee getByIdAndGender = employeeInterfaceMapper.getEmpByIdAndGender(1, "f"); // 多个参数
+//        System.out.println(getByIdAndGender);
 
         openSession.close();
     }
