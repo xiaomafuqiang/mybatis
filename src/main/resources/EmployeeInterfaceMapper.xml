@@ -6,4 +6,8 @@
     <select id="getEmpById" resultType="net.htmlonline.bean.Employee">
     select id, last_name lastName, email, gender from tb1_employee where id = #{id}
   </select>
+
+    <select id="getEmpById2" resultType="net.htmlonline.bean.Employee">
+    select id, last_name lastName, email, gender from tb1_employee where id = #{id}
+  </select>
 </mapper>

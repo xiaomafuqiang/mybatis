@@ -46,7 +46,7 @@ public class MybatisTest {
         SqlSession openSession = sqlSessionFactory.openSession();
 
         EmployeeInterfaceMapper employeeInterfaceMapper = openSession.getMapper(EmployeeInterfaceMapper.class);
-        Employee employee = employeeInterfaceMapper.getEmpById(2);
+        Employee employee = employeeInterfaceMapper.getEmpById2(2);
         System.out.println(employee);
     }
 }
