@@ -5,7 +5,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +28,7 @@ public class MybatisTest {
         SqlSessionFactory sqlSessionFactory = getSessionFactory();
 
         SqlSession openSession = sqlSessionFactory.openSession();
-        Employee employee = openSession.selectOne("EmployeeMapper.selectEmp", 1);
+        Employee employee = openSession.selectOne("EmployeeMapperTest.selectEmp", 1);
 
         System.out.println(employee);
         openSession.close();

@@ -48,5 +48,7 @@
     <mappers>
         <!-- 普通写法 -->
         <mapper resource="EmployeeMapper.xml"/>
+        <!-- 接口写法 -->
+        <mapper resource="EmployeeMapperInterface.xml"/>
     </mappers>
 </configuration>
