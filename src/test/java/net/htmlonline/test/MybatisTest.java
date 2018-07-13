@@ -1,7 +1,6 @@
 package net.htmlonline.test;
 
 import net.htmlonline.dao.Employee;
-import net.htmlonline.dao.EmployeeInterfaceMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -40,17 +39,5 @@ public class MybatisTest {
     /*
     * 接口写法， 新版本
     * */
-    @Test
-    public void testInterface() throws IOException {
-        SqlSessionFactory sqlSessionFactory = getSessionFactory();
-        SqlSession openSession = sqlSessionFactory.openSession();
 
-        EmployeeInterfaceMapper employeeInterfaceMapper = openSession.getMapper(EmployeeInterfaceMapper.class);
-        Employee getById = employeeInterfaceMapper.getEmpById(2); // 单个参数
-        System.out.println(getById);
-        Employee getByIdAndGender = employeeInterfaceMapper.getEmpByIdAndGender(1, "f"); // 多个参数
-        System.out.println(getByIdAndGender);
-
-        openSession.close();
-    }
 }
