@@ -6,4 +6,12 @@
     <select id="getEmployeeById" resultType="net.htmlonline.dao.Employee">
     select id, last_name lastName, email, gender from tb1_employee where id = #{id}
   </select>
+
+    <select id="getEmployeeByIdAndAge" resultType="net.htmlonline.dao.Student">
+    select id, last_name lastName, age, gender from student where id = #{id} and age = #{age}
+  </select>
+
+    <insert id="insertStudent" parameterType="Student">
+        insert into student (age, name, last_name, gender) values (#{age}, #{name}, #{lastName}, #{gender})
+    </insert>
 </mapper>
