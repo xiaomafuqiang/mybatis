@@ -8,4 +8,17 @@ email varchar(255),
 last_name varchar(144),
 gender varchar (11)
 );
+
+
+create  table student
+(
+  id int(11) primary key auto_increment,
+  age int(11),
+  name varchar(144),
+  last_name varchar(144),
+  gender varchar (11)
+);
+
+
+
 insert into tb1_employee (id, email, last_name, gender) values(null, 'mafuqiang@outlook.com', 'xiaoma', 'M');
